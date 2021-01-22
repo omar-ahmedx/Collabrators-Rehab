@@ -182,7 +182,7 @@ main  {
     flex-direction: column;
     align-items: center;
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, #007bbad4, #0084bdc7), url(/css/imgs/p2.jpeg);
+    background-image: linear-gradient(to right bottom, #007bbad4, #0084bdc7), url(imgs/p2.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
