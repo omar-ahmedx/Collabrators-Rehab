@@ -1,0 +1,222 @@
+/*--- Global styles ---*/
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
+    color: #777;
+}
+body {
+    padding: 3rem;
+}
+@media only screen and (max-width:768px) {
+    body {
+        padding: 0;
+    }
+}
+.bold {font-weight: 700;}
+p {font-size:1.2rem;}
+/*-- Haeder --*/
+header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, #007bbacc, #0084bdc9),url(imgs/bg.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+@media only screen and (max-width:768px) {
+ 
+}
+
+#logo {
+    position: absolute;
+    left: 4rem;
+    top: -.5rem;
+}
+@media only screen and (max-width:768px) {
+    #logo {
+        width: 40vw;
+        left: 0;
+        top: 0;
+    }
+    #logo img {
+        width: 100%;
+    }
+}
+
+/*--- Opening ---*/
+#opening-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 25rem 0 60rem 0;
+
+    margin-top: -20vh;
+}
+#opening {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#opening-text {
+    width: 50%;
+}
+#opening img {
+    box-shadow: 0 0 1rem rgb(0 0 0 / 40%);
+    border-radius: 2px;
+}
+.start {
+    display: inline-block;
+    padding-bottom: 3rem;
+}
+.end {
+    display: inline-block;
+    padding-top: 3rem;
+}
+@media only screen and (max-width:768px) {
+    #opening-container {
+        padding: 25rem 0 40rem 0;
+    }
+    #opening {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .start {
+        padding-top: 3rem;
+    }
+    #opening-text {
+        width: 70%;
+        font-size: 1.4rem;
+    }
+ }
+ /*--- Gallary ---*/
+.gallary {
+    width: 55%;
+    display: block;
+    position: relative;
+    top: 20rem;
+}
+@media only screen and (max-width:768px) {
+    .gallary {
+        width: 90%;
+    }
+ }
+
+.gallary-imgs {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .gallary-imgs {
+    width: 33.33333%;
+    position: relative;
+    float: left;
+  }
+}
+
+.gallary-imgs:hover {
+  outline: 1.5rem solid  #0084bdc9;
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+  transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.gallary:hover .gallary-imgs:not(:hover) {
+  transform: scale(0.95);
+}
+
+.gallary-p1 {
+  left: 0;
+  top: -2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .gallary-p1 {
+    top: 4px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.gallary-p2 {
+  right: 0;
+  top: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .gallary-p2 {
+    top: -1rem;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 100;
+  }
+}
+
+.gallary-p3 {
+  left: 20%;
+  top: 10rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .gallary-p3 {
+    top: 1rem;
+    left: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*--- Main Content ---*/
+main  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, #007bbad4, #0084bdc7), url(/css/imgs/p2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main a {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(255 255 255 / 87%);
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.far, .fas {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right bottom, #007bbad4, #0084bdc7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width:769px) {
+  main {
+      flex-direction: row;
+  }
+  main a {
+    margin: 0 20px;
+  }
+ }
