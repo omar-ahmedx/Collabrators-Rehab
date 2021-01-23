@@ -220,3 +220,14 @@ main a {
     margin: 0 20px;
   }
  }
+
+ /*--- Footer ---*/
+ footer {
+   text-align: center;
+   background-color: #333;
+   padding: 7rem 0;
+ }
+ footer p {
+  color: #f7f7f7;
+  font-size: 1.3rem;
+ }
